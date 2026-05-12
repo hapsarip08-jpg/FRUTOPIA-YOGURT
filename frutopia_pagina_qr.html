@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frutopia · Yogurt Artesanal de Fresa</title>
+<meta name="description" content="Frutopia es un yogurt artesanal de fresa elaborado en Trujillo con ingredientes naturales. Conoce sus ingredientes, información nutricional y cómo disfrutarlo.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.30.0/tabler-icons.min.css">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Calibri, sans-serif;
+    background: #FBEAF0;
+    color: #2C2C2A;
+    line-height: 1.5;
+    padding: 1rem;
+  }
+  .fp-page { max-width: 480px; margin: 0 auto; }
+  .fp-hero {
+    background: linear-gradient(135deg, #D4537E 0%, #993556 100%);
+    color: white;
+    padding: 2.5rem 1.5rem;
+    border-radius: 16px;
+    text-align: center;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 20px rgba(212, 83, 126, 0.25);
+  }
+  .fp-brand { font-size: 36px; font-weight: 600; letter-spacing: 2px; margin: 0.5rem 0 0.25rem; }
+  .fp-tagline { font-size: 15px; opacity: 0.95; font-style: italic; margin: 0 0 0.5rem; }
+  .fp-sub { font-size: 12px; opacity: 0.85; }
+  .fp-icon-wrap {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 70px; height: 70px; background: white; border-radius: 50%;
+    margin-bottom: 0.5rem; font-size: 36px;
+  }
+  .fp-card {
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .fp-section-title {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 14px; font-weight: 600; color: #D4537E;
+    margin: 0 0 1rem;
+    text-transform: uppercase; letter-spacing: 0.8px;
+  }
+  .fp-section-title i { font-size: 20px; }
+  .fp-body { font-size: 15px; line-height: 1.7; color: #2C2C2A; }
+  .fp-list { font-size: 15px; line-height: 1.9; color: #2C2C2A; padding-left: 1.25rem; }
+  .fp-nut-table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 0.5rem; }
+  .fp-nut-table th {
+    background: #FBEAF0; color: #72243E;
+    padding: 10px 12px; text-align: left;
+    font-weight: 600; font-size: 13px;
+  }
+  .fp-nut-table td { padding: 9px 12px; border-bottom: 1px solid #F4D6E2; }
+  .fp-nut-table td:last-child { text-align: right; font-weight: 600; }
+  .fp-nut-table .indent { padding-left: 28px; color: #6E6E6E; }
+  .fp-badge-wrap { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 1rem; }
+  .fp-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #FBEAF0; color: #72243E;
+    padding: 7px 14px; border-radius: 999px;
+    font-size: 13px; font-weight: 500;
+  }
+  .fp-badge i { font-size: 16px; }
+  .fp-contact { display: flex; align-items: center; gap: 12px; padding: 8px 0; font-size: 14px; }
+  .fp-contact i { font-size: 18px; color: #D4537E; width: 24px; flex-shrink: 0; }
+  .fp-footer {
+    background: linear-gradient(135deg, #D4537E 0%, #993556 100%);
+    color: white; padding: 2rem 1.5rem; border-radius: 16px; text-align: center;
+  }
+  .fp-social { display: flex; justify-content: center; gap: 16px; margin: 1rem 0; }
+  .fp-social-btn {
+    display: flex; align-items: center; justify-content: center;
+    width: 44px; height: 44px; background: rgba(255,255,255,0.2);
+    border-radius: 50%; color: white; text-decoration: none;
+    transition: all 0.2s;
+  }
+  .fp-social-btn:hover { background: rgba(255,255,255,0.35); transform: translateY(-2px); }
+  .fp-social-btn i { font-size: 20px; }
+  .fp-footer-small { font-size: 11px; opacity: 0.85; margin-top: 1rem; }
+  .fp-stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 1rem; }
+  .fp-stat {
+    background: #FBEAF0; border-radius: 12px;
+    padding: 14px 12px; text-align: center;
+  }
+  .fp-stat-num { font-size: 24px; font-weight: 600; color: #D4537E; line-height: 1.2; }
+  .fp-stat-lbl { font-size: 11px; color: #72243E; margin-top: 4px; font-weight: 500; letter-spacing: 0.5px; }
+  @media (max-width: 480px) {
+    body { padding: 0.5rem; }
+    .fp-card, .fp-hero, .fp-footer { padding: 1.25rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="fp-page">
+
+  <div class="fp-hero">
+    <div class="fp-icon-wrap">🍓</div>
+    <div class="fp-brand">FRUTOPIA</div>
+    <p class="fp-tagline">Yogurt Artesanal de Fresa</p>
+    <p class="fp-sub">Hecho en Trujillo · Con ingredientes naturales</p>
+  </div>
+
+  <div class="fp-card">
+    <h3 class="fp-section-title"><i class="ti ti-info-circle"></i>Sobre el producto</h3>
+    <p class="fp-body">Frutopia es un yogurt artesanal elaborado en Trujillo con leche fresca local y fresa natural. Pasamos por un proceso de pasteurización suave y fermentación lenta que respeta el sabor, la textura y los probióticos vivos que tu cuerpo necesita.</p>
+    <div class="fp-badge-wrap">
+      <span class="fp-badge"><i class="ti ti-leaf"></i>Sin colorantes artificiales</span>
+      <span class="fp-badge"><i class="ti ti-heart"></i>Hecho con amor</span>
+      <span class="fp-badge"><i class="ti ti-map-pin"></i>Producto trujillano</span>
+    </div>
+  </div>
+
+  <div class="fp-card">
+    <h3 class="fp-section-title"><i class="ti ti-list"></i>Ingredientes</h3>
+    <p class="fp-body">Leche fresca pasteurizada, azúcar blanca, mermelada de fresa, leche en polvo, cultivo láctico, saborizante de fresa, sorbato de potasio (conservante) y colorante rojo permitido.</p>
+  </div>
+
+  <div class="fp-card">
+    <h3 class="fp-section-title"><i class="ti ti-chart-bar"></i>Información nutricional</h3>
+    <p class="fp-body" style="font-size: 13px; color: #6E6E6E; margin-bottom: 0.5rem;">Porción: 180 g (1 vaso) · Porciones por envase: 5</p>
+    <table class="fp-nut-table">
+      <thead>
+        <tr><th>Nutriente</th><th style="text-align:right">Por 100 g</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Energía</td><td>102 kcal</td></tr>
+        <tr><td>Carbohidratos</td><td>15.5 g</td></tr>
+        <tr><td class="indent">de los cuales azúcares</td><td>14.5 g</td></tr>
+        <tr><td>Proteínas</td><td>3.0 g</td></tr>
+        <tr><td>Grasas totales</td><td>3.1 g</td></tr>
+        <tr><td class="indent">saturadas</td><td>1.9 g</td></tr>
+        <tr><td>Sodio</td><td>45 mg</td></tr>
+      </tbody>
+    </table>
+    <p class="fp-body" style="font-size: 11px; color: #999; margin-top: 10px;">%VD basado en una dieta de 2 000 kcal</p>
+  </div>
+
+  <div class="fp-card">
+    <h3 class="fp-section-title"><i class="ti ti-snowflake"></i>Cómo conservarlo</h3>
+    <p class="fp-body">Mantener refrigerado entre <strong>2 °C y 6 °C</strong>. Conservar en un lugar limpio y fresco. Evitar la exposición directa al sol.</p>
+    <div class="fp-stat-grid">
+      <div class="fp-stat">
+        <div class="fp-stat-num">30</div>
+        <div class="fp-stat-lbl">DÍAS DE VIDA ÚTIL</div>
+      </div>
+      <div class="fp-stat">
+        <div class="fp-stat-num">900 g</div>
+        <div class="fp-stat-lbl">CONTENIDO NETO</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fp-card">
+    <h3 class="fp-section-title"><i class="ti ti-bulb"></i>Cómo disfrutarlo</h3>
+    <ul class="fp-list">
+      <li>En el desayuno con granola, frutas o avena</li>
+      <li>Como postre saludable con miel o frutos secos</li>
+      <li>Para batidos y smoothies energéticos</li>
+      <li>En recetas de panqueques o helados artesanales</li>
+    </ul>
+  </div>
+
+  <div class="fp-card">
+    <h3 class="fp-section-title"><i class="ti ti-book"></i>Nuestra historia</h3>
+    <p class="fp-body">Frutopia nace en Trujillo con un propósito claro: ofrecer un yogurt de calidad, hecho con cuidado, sabor y respeto por la tradición láctea local. Cada envase es preparado en pequeñas cantidades para asegurar frescura y autenticidad.</p>
+  </div>
+
+  <div class="fp-card">
+    <h3 class="fp-section-title"><i class="ti ti-phone"></i>Contacto</h3>
+    <div class="fp-contact"><i class="ti ti-map-pin"></i>Av. América Oeste 1250, Urb. El Recreo, Trujillo</div>
+    <div class="fp-contact"><i class="ti ti-mail"></i>contacto@frutopia.pe</div>
+    <div class="fp-contact"><i class="ti ti-brand-whatsapp"></i>+51 999 999 999</div>
+    <div class="fp-contact"><i class="ti ti-id"></i>RUC: 20612345678</div>
+    <div class="fp-contact"><i class="ti ti-shield-check"></i>Reg. Sanitario: en trámite (DIGESA)</div>
+  </div>
+
+  <div class="fp-footer">
+    <div style="font-size: 22px; font-weight: 600; letter-spacing: 2px;">FRUTOPIA</div>
+    <p style="font-size: 13px; margin: 0.5rem 0 0; opacity: 0.9; font-style: italic;">Sabor natural · Producto artesanal</p>
+    <div class="fp-social">
+      <a href="https://instagram.com/frutopia.pe" class="fp-social-btn" target="_blank"><i class="ti ti-brand-instagram"></i></a>
+      <a href="https://facebook.com/frutopia.pe" class="fp-social-btn" target="_blank"><i class="ti ti-brand-facebook"></i></a>
+      <a href="https://tiktok.com/@frutopia.pe" class="fp-social-btn" target="_blank"><i class="ti ti-brand-tiktok"></i></a>
+      <a href="https://wa.me/51999999999" class="fp-social-btn" target="_blank"><i class="ti ti-brand-whatsapp"></i></a>
+    </div>
+    <p class="fp-footer-small">© 2026 Frutopia · Trujillo, Perú</p>
+  </div>
+
+</div>
+
+</body>
+</html>
